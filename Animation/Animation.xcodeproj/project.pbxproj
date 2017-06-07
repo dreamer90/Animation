@@ -13,6 +13,10 @@
 		37C405771EE79A6000D3BA92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C405751EE79A6000D3BA92 /* Main.storyboard */; };
 		37C405791EE79A6000D3BA92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C405781EE79A6000D3BA92 /* Assets.xcassets */; };
 		37C4057C1EE79A6000D3BA92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C4057A1EE79A6000D3BA92 /* LaunchScreen.storyboard */; };
+		37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C4058B1EE7A70200D3BA92 /* AnimationCircleController.m */; };
+		37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */; };
+		37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405961EE80BAA00D3BA92 /* CircleView.m */; };
+		37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405991EE80DBF00D3BA92 /* CircleLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		37C405781EE79A6000D3BA92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C4057B1EE79A6000D3BA92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37C4057D1EE79A6000D3BA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C4058A1EE7A70200D3BA92 /* AnimationCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCircleController.h; sourceTree = "<group>"; };
+		37C4058B1EE7A70200D3BA92 /* AnimationCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCircleController.m; sourceTree = "<group>"; };
+		37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationCircleController.xib; sourceTree = "<group>"; };
+		37C405951EE80BAA00D3BA92 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		37C405961EE80BAA00D3BA92 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		37C405981EE80DBF00D3BA92 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
+		37C405991EE80DBF00D3BA92 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 		37C4056B1EE79A5F00D3BA92 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				37C405831EE79F8100D3BA92 /* AnimationStyles */,
 				37C4056F1EE79A5F00D3BA92 /* AppDelegate.h */,
 				37C405701EE79A5F00D3BA92 /* AppDelegate.m */,
 				37C405721EE79A5F00D3BA92 /* ViewController.h */,
@@ -77,6 +89,44 @@
 				37C4056D1EE79A5F00D3BA92 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
+			isa = PBXGroup;
+			children = (
+				37C405841EE7A06900D3BA92 /* AnimatedCircleDemo */,
+			);
+			path = AnimationStyles;
+			sourceTree = "<group>";
+		};
+		37C405841EE7A06900D3BA92 /* AnimatedCircleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				37C405891EE7A6F000D3BA92 /* VC */,
+				37C405851EE7A06900D3BA92 /* View */,
+			);
+			path = AnimatedCircleDemo;
+			sourceTree = "<group>";
+		};
+		37C405851EE7A06900D3BA92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37C405951EE80BAA00D3BA92 /* CircleView.h */,
+				37C405961EE80BAA00D3BA92 /* CircleView.m */,
+				37C405981EE80DBF00D3BA92 /* CircleLayer.h */,
+				37C405991EE80DBF00D3BA92 /* CircleLayer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37C405891EE7A6F000D3BA92 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				37C4058A1EE7A70200D3BA92 /* AnimationCircleController.h */,
+				37C4058B1EE7A70200D3BA92 /* AnimationCircleController.m */,
+				37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */,
 				37C4057C1EE79A6000D3BA92 /* LaunchScreen.storyboard in Resources */,
 				37C405791EE79A6000D3BA92 /* Assets.xcassets in Resources */,
 				37C405771EE79A6000D3BA92 /* Main.storyboard in Resources */,
@@ -151,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */,
+				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,
+				37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */,
 				37C405711EE79A5F00D3BA92 /* AppDelegate.m in Sources */,
 				37C4056E1EE79A5F00D3BA92 /* main.m in Sources */,
 			);
@@ -273,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FH3L833Z7U;
 				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rtgrtgrgrhrth.com.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FH3L833Z7U;
 				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rtgrtgrgrhrth.com.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
