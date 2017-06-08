@@ -7,11 +7,12 @@
 //
 
 #import "AnimationCircleController.h"
+#import "CircleView.h"
 
 @interface AnimationCircleController ()
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 @property (weak, nonatomic) IBOutlet UISlider *slide;
-
+@property (strong,nonatomic) CircleView *cv;
 @end
 
 @implementation AnimationCircleController
@@ -20,12 +21,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.slide addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    self.cv = [[CircleView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 320/2, self.view.frame.size.height/2 - 320/2, 320, 320)];
+    [self.view addSubview:self.cv];
+    //首次进入
+    self.cv.circleLayer.progress = _slide.value;
 }
 
 
 -(void)valueChanged:(UISlider *)slider
 {
     self.valueLabel.text = [NSString stringWithFormat:@"Current:  %.2f",slider.value];
+    self.cv.circleLayer.progress = slider.value;
 }
 
 - (void)didReceiveMemoryWarning {
