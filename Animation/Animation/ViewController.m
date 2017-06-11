@@ -53,6 +53,12 @@
         case 0:
             title = @"AnimationCircleController";
             break;
+        case 1:
+            title = @"";
+            break;
+        case 2:
+            title = @"GooeySlideMenuController";
+            break;
             
         default:
             break;

@@ -17,6 +17,10 @@
 		37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */; };
 		37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405961EE80BAA00D3BA92 /* CircleView.m */; };
 		37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405991EE80DBF00D3BA92 /* CircleLayer.m */; };
+		84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E721EEBC9B000C86967 /* GooeySlideMenuController.m */; };
+		84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */; };
+		84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */; };
+		84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		37C405961EE80BAA00D3BA92 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		37C405981EE80DBF00D3BA92 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
 		37C405991EE80DBF00D3BA92 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
+		84760E711EEBC9B000C86967 /* GooeySlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenuController.h; sourceTree = "<group>"; };
+		84760E721EEBC9B000C86967 /* GooeySlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenuController.m; sourceTree = "<group>"; };
+		84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GooeySlideMenuController.xib; sourceTree = "<group>"; };
+		84760E761EEBCC7C00C86967 /* GooeySlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenu.h; sourceTree = "<group>"; };
+		84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
+		84760E791EEBCC9800C86967 /* SlideMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
+		84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +105,7 @@
 		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
 			isa = PBXGroup;
 			children = (
+				84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */,
 				37C405841EE7A06900D3BA92 /* AnimatedCircleDemo */,
 			);
 			path = AnimationStyles;
@@ -127,6 +139,36 @@
 				37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84760E6C1EEBC90D00C86967 /* VC */,
+				84760E6D1EEBC90D00C86967 /* View */,
+			);
+			path = GooeySlideMenuDemo;
+			sourceTree = "<group>";
+		};
+		84760E6C1EEBC90D00C86967 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84760E711EEBC9B000C86967 /* GooeySlideMenuController.h */,
+				84760E721EEBC9B000C86967 /* GooeySlideMenuController.m */,
+				84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		84760E6D1EEBC90D00C86967 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84760E761EEBCC7C00C86967 /* GooeySlideMenu.h */,
+				84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */,
+				84760E791EEBCC9800C86967 /* SlideMenuButton.h */,
+				84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +234,7 @@
 				37C4057C1EE79A6000D3BA92 /* LaunchScreen.storyboard in Resources */,
 				37C405791EE79A6000D3BA92 /* Assets.xcassets in Resources */,
 				37C405771EE79A6000D3BA92 /* Main.storyboard in Resources */,
+				84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +247,10 @@
 			files = (
 				37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */,
 				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
+				84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */,
+				84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,
+				84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */,
 				37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */,
 				37C405711EE79A5F00D3BA92 /* AppDelegate.m in Sources */,
 				37C4056E1EE79A5F00D3BA92 /* main.m in Sources */,
@@ -366,6 +412,7 @@
 				37C405821EE79A6000D3BA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
