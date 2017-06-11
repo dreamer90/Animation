@@ -17,6 +17,8 @@
 		37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */; };
 		37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405961EE80BAA00D3BA92 /* CircleView.m */; };
 		37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405991EE80DBF00D3BA92 /* CircleLayer.m */; };
+		8412180C1EED20740063ABBA /* QQCuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412180B1EED20740063ABBA /* QQCuteViewController.m */; };
+		8412180F1EED20AF0063ABBA /* QQCuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412180E1EED20AF0063ABBA /* QQCuteView.m */; };
 		84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E721EEBC9B000C86967 /* GooeySlideMenuController.m */; };
 		84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */; };
 		84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */; };
@@ -41,6 +43,10 @@
 		37C405961EE80BAA00D3BA92 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		37C405981EE80DBF00D3BA92 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
 		37C405991EE80DBF00D3BA92 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
+		8412180A1EED20740063ABBA /* QQCuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCuteViewController.h; sourceTree = "<group>"; };
+		8412180B1EED20740063ABBA /* QQCuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCuteViewController.m; sourceTree = "<group>"; };
+		8412180D1EED20AF0063ABBA /* QQCuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCuteView.h; sourceTree = "<group>"; };
+		8412180E1EED20AF0063ABBA /* QQCuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCuteView.m; sourceTree = "<group>"; };
 		84760E711EEBC9B000C86967 /* GooeySlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenuController.h; sourceTree = "<group>"; };
 		84760E721EEBC9B000C86967 /* GooeySlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenuController.m; sourceTree = "<group>"; };
 		84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GooeySlideMenuController.xib; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
 			isa = PBXGroup;
 			children = (
+				841218071EED20360063ABBA /* QQCuteDemo */,
 				84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */,
 				37C405841EE7A06900D3BA92 /* AnimatedCircleDemo */,
 			);
@@ -139,6 +146,33 @@
 				37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		841218071EED20360063ABBA /* QQCuteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				841218081EED20360063ABBA /* VC */,
+				841218091EED20360063ABBA /* View */,
+			);
+			path = QQCuteDemo;
+			sourceTree = "<group>";
+		};
+		841218081EED20360063ABBA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8412180A1EED20740063ABBA /* QQCuteViewController.h */,
+				8412180B1EED20740063ABBA /* QQCuteViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		841218091EED20360063ABBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8412180D1EED20AF0063ABBA /* QQCuteView.h */,
+				8412180E1EED20AF0063ABBA /* QQCuteView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */ = {
@@ -246,12 +280,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */,
+				8412180F1EED20AF0063ABBA /* QQCuteView.m in Sources */,
 				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
 				84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */,
 				84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,
 				84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */,
 				37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */,
+				8412180C1EED20740063ABBA /* QQCuteViewController.m in Sources */,
 				37C405711EE79A5F00D3BA92 /* AppDelegate.m in Sources */,
 				37C4056E1EE79A5F00D3BA92 /* main.m in Sources */,
 			);

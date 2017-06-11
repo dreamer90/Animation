@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"动画";
-    _styleArr = @[@"AnimatedCircleDemo",@"AnimatedCurveDemo",@"GooeySlideMenuDemo"];
+    _styleArr = @[@"AnimatedCircleDemo",@"QQCuteViewController",@"GooeySlideMenuDemo"];
     
     self.tableView.hidden = NO;
 }
@@ -54,7 +54,7 @@
             title = @"AnimationCircleController";
             break;
         case 1:
-            title = @"";
+            title = @"QQCuteViewController";
             break;
         case 2:
             title = @"GooeySlideMenuController";
