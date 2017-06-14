@@ -23,6 +23,8 @@
 		84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84760E731EEBC9B000C86967 /* GooeySlideMenuController.xib */; };
 		84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */; };
 		84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */; };
+		8478ACBA1EF171ED008C2719 /* LaunchFlashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478ACB81EF171ED008C2719 /* LaunchFlashController.m */; };
+		8478ACBB1EF171ED008C2719 /* LaunchFlashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8478ACB91EF171ED008C2719 /* LaunchFlashController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,9 @@
 		84760E771EEBCC7C00C86967 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
 		84760E791EEBCC9800C86967 /* SlideMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
 		84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuButton.m; sourceTree = "<group>"; };
+		8478ACB71EF171ED008C2719 /* LaunchFlashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchFlashController.h; sourceTree = "<group>"; };
+		8478ACB81EF171ED008C2719 /* LaunchFlashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchFlashController.m; sourceTree = "<group>"; };
+		8478ACB91EF171ED008C2719 /* LaunchFlashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchFlashController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
 			isa = PBXGroup;
 			children = (
+				8478ACB61EF16E5F008C2719 /* LaunchFlashDemo */,
 				841218071EED20360063ABBA /* QQCuteDemo */,
 				84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */,
 				37C405841EE7A06900D3BA92 /* AnimatedCircleDemo */,
@@ -205,6 +211,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8478ACB61EF16E5F008C2719 /* LaunchFlashDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8478ACB71EF171ED008C2719 /* LaunchFlashController.h */,
+				8478ACB81EF171ED008C2719 /* LaunchFlashController.m */,
+				8478ACB91EF171ED008C2719 /* LaunchFlashController.xib */,
+			);
+			path = LaunchFlashDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +285,7 @@
 				37C405791EE79A6000D3BA92 /* Assets.xcassets in Resources */,
 				37C405771EE79A6000D3BA92 /* Main.storyboard in Resources */,
 				84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */,
+				8478ACBB1EF171ED008C2719 /* LaunchFlashController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +299,7 @@
 				37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */,
 				8412180F1EED20AF0063ABBA /* QQCuteView.m in Sources */,
 				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
+				8478ACBA1EF171ED008C2719 /* LaunchFlashController.m in Sources */,
 				84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */,
 				84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,

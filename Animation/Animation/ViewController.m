@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"动画";
-    _styleArr = @[@"AnimatedCircleDemo",@"QQCuteViewController",@"GooeySlideMenuDemo"];
+    _styleArr = @[@"AnimationCircleController",@"QQCuteViewController",@"GooeySlideMenuController",@"LaunchFlashController"];
     
     self.tableView.hidden = NO;
 }
@@ -48,21 +48,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSString * title;
-    switch ((int)(indexPath.row)) {
-        case 0:
-            title = @"AnimationCircleController";
-            break;
-        case 1:
-            title = @"QQCuteViewController";
-            break;
-        case 2:
-            title = @"GooeySlideMenuController";
-            break;
-            
-        default:
-            break;
-    }
+    NSString * title = _styleArr[indexPath.row];
     
     id myObj = [[NSClassFromString(title) alloc] init];
     
