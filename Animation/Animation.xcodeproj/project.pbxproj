@@ -25,6 +25,12 @@
 		84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84760E7A1EEBCC9800C86967 /* SlideMenuButton.m */; };
 		8478ACBA1EF171ED008C2719 /* LaunchFlashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478ACB81EF171ED008C2719 /* LaunchFlashController.m */; };
 		8478ACBB1EF171ED008C2719 /* LaunchFlashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8478ACB91EF171ED008C2719 /* LaunchFlashController.xib */; };
+		84EE52981EF2CA820024A095 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE52961EF2CA820024A095 /* FirstViewController.m */; };
+		84EE52991EF2CA820024A095 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE52971EF2CA820024A095 /* FirstViewController.xib */; };
+		84EE529D1EF2CA930024A095 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE529B1EF2CA930024A095 /* SecondViewController.m */; };
+		84EE529E1EF2CA930024A095 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE529C1EF2CA930024A095 /* SecondViewController.xib */; };
+		84EE52A11EF2CCA20024A095 /* PingTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE52A01EF2CCA20024A095 /* PingTransition.m */; };
+		84EE52A41EF2CCBB0024A095 /* PingInvertTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE52A31EF2CCBB0024A095 /* PingInvertTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +65,16 @@
 		8478ACB71EF171ED008C2719 /* LaunchFlashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchFlashController.h; sourceTree = "<group>"; };
 		8478ACB81EF171ED008C2719 /* LaunchFlashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchFlashController.m; sourceTree = "<group>"; };
 		8478ACB91EF171ED008C2719 /* LaunchFlashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchFlashController.xib; sourceTree = "<group>"; };
+		84EE52951EF2CA820024A095 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		84EE52961EF2CA820024A095 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		84EE52971EF2CA820024A095 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		84EE529A1EF2CA930024A095 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		84EE529B1EF2CA930024A095 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		84EE529C1EF2CA930024A095 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		84EE529F1EF2CCA20024A095 /* PingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingTransition.h; sourceTree = "<group>"; };
+		84EE52A01EF2CCA20024A095 /* PingTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingTransition.m; sourceTree = "<group>"; };
+		84EE52A21EF2CCBB0024A095 /* PingInvertTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingInvertTransition.h; sourceTree = "<group>"; };
+		84EE52A31EF2CCBB0024A095 /* PingInvertTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingInvertTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +132,7 @@
 		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
 			isa = PBXGroup;
 			children = (
+				84EE52931EF2CA640024A095 /* PingTransitionDemo */,
 				8478ACB61EF16E5F008C2719 /* LaunchFlashDemo */,
 				841218071EED20360063ABBA /* QQCuteDemo */,
 				84760E6B1EEBC90D00C86967 /* GooeySlideMenuDemo */,
@@ -221,6 +238,31 @@
 			path = LaunchFlashDemo;
 			sourceTree = "<group>";
 		};
+		84EE52931EF2CA640024A095 /* PingTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84EE52941EF2CA640024A095 /* transition */,
+				84EE52951EF2CA820024A095 /* FirstViewController.h */,
+				84EE52961EF2CA820024A095 /* FirstViewController.m */,
+				84EE52971EF2CA820024A095 /* FirstViewController.xib */,
+				84EE529A1EF2CA930024A095 /* SecondViewController.h */,
+				84EE529B1EF2CA930024A095 /* SecondViewController.m */,
+				84EE529C1EF2CA930024A095 /* SecondViewController.xib */,
+			);
+			path = PingTransitionDemo;
+			sourceTree = "<group>";
+		};
+		84EE52941EF2CA640024A095 /* transition */ = {
+			isa = PBXGroup;
+			children = (
+				84EE529F1EF2CCA20024A095 /* PingTransition.h */,
+				84EE52A01EF2CCA20024A095 /* PingTransition.m */,
+				84EE52A21EF2CCBB0024A095 /* PingInvertTransition.h */,
+				84EE52A31EF2CCBB0024A095 /* PingInvertTransition.m */,
+			);
+			path = transition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,7 +326,9 @@
 				37C4057C1EE79A6000D3BA92 /* LaunchScreen.storyboard in Resources */,
 				37C405791EE79A6000D3BA92 /* Assets.xcassets in Resources */,
 				37C405771EE79A6000D3BA92 /* Main.storyboard in Resources */,
+				84EE529E1EF2CA930024A095 /* SecondViewController.xib in Resources */,
 				84760E751EEBC9B000C86967 /* GooeySlideMenuController.xib in Resources */,
+				84EE52991EF2CA820024A095 /* FirstViewController.xib in Resources */,
 				8478ACBB1EF171ED008C2719 /* LaunchFlashController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,13 +342,17 @@
 			files = (
 				37C4058D1EE7A70200D3BA92 /* AnimationCircleController.m in Sources */,
 				8412180F1EED20AF0063ABBA /* QQCuteView.m in Sources */,
+				84EE52A41EF2CCBB0024A095 /* PingInvertTransition.m in Sources */,
 				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
 				8478ACBA1EF171ED008C2719 /* LaunchFlashController.m in Sources */,
 				84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */,
 				84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,
+				84EE52A11EF2CCA20024A095 /* PingTransition.m in Sources */,
+				84EE52981EF2CA820024A095 /* FirstViewController.m in Sources */,
 				84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */,
 				37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */,
+				84EE529D1EF2CA930024A095 /* SecondViewController.m in Sources */,
 				8412180C1EED20740063ABBA /* QQCuteViewController.m in Sources */,
 				37C405711EE79A5F00D3BA92 /* AppDelegate.m in Sources */,
 				37C4056E1EE79A5F00D3BA92 /* main.m in Sources */,
