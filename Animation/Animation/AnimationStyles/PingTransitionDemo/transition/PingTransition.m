@@ -27,12 +27,13 @@
     
     FirstViewController *firstVC = (FirstViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     SecondViewController *secondVC = (SecondViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    secondVC.view.frame = [UIScreen mainScreen].bounds;
     
     UIView * contView = [transitionContext containerView];
     
     UIButton * button = firstVC.button;
     
-    UIBezierPath *maskStartBP = [UIBezierPath bezierPathWithRect:button.frame];
+    UIBezierPath *maskStartBP = [UIBezierPath bezierPathWithOvalInRect:button.frame];
     [contView addSubview:firstVC.view];
     [contView addSubview:secondVC.view];
     
@@ -60,7 +61,7 @@
     CGFloat radius = sqrt((finalPoint.x * finalPoint.x) + (finalPoint.y * finalPoint.y));
     UIBezierPath *maskFinalBP = [UIBezierPath bezierPathWithOvalInRect:CGRectInset(button.frame, -radius, -radius)];
     
-    //创建一个 CAShapeLayer 来负责展示圆形遮盖
+    // 创建一个 CAShapeLayer 来负责展示圆形遮盖
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     maskLayer.path = maskFinalBP.CGPath; //将它的 path 指定为最终的 path 来避免在动画完成后会回弹
     secondVC.view.layer.mask = maskLayer;

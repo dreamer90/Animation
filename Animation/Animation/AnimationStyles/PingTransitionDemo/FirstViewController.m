@@ -28,6 +28,7 @@
     [super viewWillAppear:animated];
     
     self.navigationController.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
