@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"动画";
-    _styleArr = @[@"AnimationCircleController",@"QQCuteViewController",@"GooeySlideMenuController",@"LaunchFlashController",@"FirstViewController"];
+    _styleArr = @[@"AnimationCircleController",@"QQCuteViewController",@"GooeySlideMenuController",@"LaunchFlashController",@"FirstViewController",@"JumpStarViewController"];
     
     self.tableView.hidden = NO;
 }
