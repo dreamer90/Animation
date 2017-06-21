@@ -17,6 +17,9 @@
 		37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */; };
 		37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405961EE80BAA00D3BA92 /* CircleView.m */; };
 		37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C405991EE80DBF00D3BA92 /* CircleLayer.m */; };
+		8411C20D1EF9EA1D00495A29 /* LoadingBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411C20B1EF9EA1D00495A29 /* LoadingBtnViewController.m */; };
+		8411C20E1EF9EA1D00495A29 /* LoadingBtnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8411C20C1EF9EA1D00495A29 /* LoadingBtnViewController.xib */; };
+		8411C2111EF9EA5200495A29 /* DownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411C2101EF9EA5200495A29 /* DownloadButton.m */; };
 		8412180C1EED20740063ABBA /* QQCuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412180B1EED20740063ABBA /* QQCuteViewController.m */; };
 		8412180F1EED20AF0063ABBA /* QQCuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412180E1EED20AF0063ABBA /* QQCuteView.m */; };
 		844C5C0A1EF96EE300A0EF91 /* JumpStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C081EF96EE300A0EF91 /* JumpStarViewController.m */; };
@@ -54,6 +57,11 @@
 		37C405961EE80BAA00D3BA92 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		37C405981EE80DBF00D3BA92 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
 		37C405991EE80DBF00D3BA92 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
+		8411C20A1EF9EA1D00495A29 /* LoadingBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtnViewController.h; sourceTree = "<group>"; };
+		8411C20B1EF9EA1D00495A29 /* LoadingBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtnViewController.m; sourceTree = "<group>"; };
+		8411C20C1EF9EA1D00495A29 /* LoadingBtnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingBtnViewController.xib; sourceTree = "<group>"; };
+		8411C20F1EF9EA5200495A29 /* DownloadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadButton.h; sourceTree = "<group>"; };
+		8411C2101EF9EA5200495A29 /* DownloadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadButton.m; sourceTree = "<group>"; };
 		8412180A1EED20740063ABBA /* QQCuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCuteViewController.h; sourceTree = "<group>"; };
 		8412180B1EED20740063ABBA /* QQCuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCuteViewController.m; sourceTree = "<group>"; };
 		8412180D1EED20AF0063ABBA /* QQCuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCuteView.h; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 		37C405831EE79F8100D3BA92 /* AnimationStyles */ = {
 			isa = PBXGroup;
 			children = (
+				8411C2071EF9EA0400495A29 /* LoadingBtnDemo */,
 				844C5C041EF96E9E00A0EF91 /* JumpStarDemo */,
 				84EE52931EF2CA640024A095 /* PingTransitionDemo */,
 				8478ACB61EF16E5F008C2719 /* LaunchFlashDemo */,
@@ -178,6 +187,34 @@
 				37C4058C1EE7A70200D3BA92 /* AnimationCircleController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		8411C2071EF9EA0400495A29 /* LoadingBtnDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8411C2081EF9EA0400495A29 /* VC */,
+				8411C2091EF9EA0400495A29 /* View */,
+			);
+			path = LoadingBtnDemo;
+			sourceTree = "<group>";
+		};
+		8411C2081EF9EA0400495A29 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8411C20A1EF9EA1D00495A29 /* LoadingBtnViewController.h */,
+				8411C20B1EF9EA1D00495A29 /* LoadingBtnViewController.m */,
+				8411C20C1EF9EA1D00495A29 /* LoadingBtnViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8411C2091EF9EA0400495A29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8411C20F1EF9EA5200495A29 /* DownloadButton.h */,
+				8411C2101EF9EA5200495A29 /* DownloadButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		841218071EED20360063ABBA /* QQCuteDemo */ = {
@@ -359,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8411C20E1EF9EA1D00495A29 /* LoadingBtnViewController.xib in Resources */,
 				37C4058E1EE7A70200D3BA92 /* AnimationCircleController.xib in Resources */,
 				844C5C0B1EF96EE300A0EF91 /* JumpStarViewController.xib in Resources */,
 				37C4057C1EE79A6000D3BA92 /* LaunchScreen.storyboard in Resources */,
@@ -385,6 +423,7 @@
 				37C405971EE80BAA00D3BA92 /* CircleView.m in Sources */,
 				8478ACBA1EF171ED008C2719 /* LaunchFlashController.m in Sources */,
 				84760E741EEBC9B000C86967 /* GooeySlideMenuController.m in Sources */,
+				8411C2111EF9EA5200495A29 /* DownloadButton.m in Sources */,
 				84760E7B1EEBCC9800C86967 /* SlideMenuButton.m in Sources */,
 				37C405741EE79A5F00D3BA92 /* ViewController.m in Sources */,
 				84EE52A11EF2CCA20024A095 /* PingTransition.m in Sources */,
@@ -392,6 +431,7 @@
 				84760E781EEBCC7C00C86967 /* GooeySlideMenu.m in Sources */,
 				37C4059A1EE80DBF00D3BA92 /* CircleLayer.m in Sources */,
 				84EE529D1EF2CA930024A095 /* SecondViewController.m in Sources */,
+				8411C20D1EF9EA1D00495A29 /* LoadingBtnViewController.m in Sources */,
 				8412180C1EED20740063ABBA /* QQCuteViewController.m in Sources */,
 				37C405711EE79A5F00D3BA92 /* AppDelegate.m in Sources */,
 				844C5C0A1EF96EE300A0EF91 /* JumpStarViewController.m in Sources */,
